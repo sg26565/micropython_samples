@@ -1,4 +1,4 @@
-"""Use a rotary switch connected to pins 22 qne 23 with switch buttun connected to pin 4 on an ESP-32 microcontroller."""
+"""Use a rotary switch connected to pins 22 qne 23 with switch button connected to pin 4 on an ESP-32 microcontroller."""
 from machine import Pin, idle
 
 class Button:
