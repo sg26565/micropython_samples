@@ -1,5 +1,7 @@
+"""Use WiFi on an ESP-32 microcontroller with essid and password stored in NVS."""
 from esp32 import NVS
 from network import WLAN, STA_IF
+from machine import idle
 
 UTF8 = 'utf8'
 
@@ -17,9 +19,7 @@ if not wlan.isconnected():
     print(f'connecting to {essid}.')
     wlan.connect(essid, password)
     while not wlan.isconnected():
-        pass
+        idle()
 
 addr = wlan.ifconfig()
 print(f'id: {addr[0]}, netmask: {addr[1]}, gw: {addr[3]}, ns: {addr[3]}')
-
-

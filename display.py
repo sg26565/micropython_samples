@@ -1,3 +1,4 @@
+"""Use a ssd-1306 type OLED display connected to I2C port 0 on an ESP-32 microcontroller."""
 from machine import I2C
 from ssd1306 import SSD1306_I2C
 

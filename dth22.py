@@ -1,3 +1,4 @@
+"""Use a dht22 sensor connected to pin 21 on an ESP-32 microcontroller."""
 from dht import DHT22
 from machine import Pin, lightsleep
 

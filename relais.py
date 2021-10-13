@@ -1,3 +1,4 @@
+"""Use a relais module connected to pin 5 on an ESP-32 microcontroller."""
 from machine import Pin, lightsleep
 
 p = Pin(5, Pin.OUT, value=1)
